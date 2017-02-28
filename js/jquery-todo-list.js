@@ -1,7 +1,3 @@
-/**
- * @name jQuery simple TODO lists plugin
- * @author Dmitry Simonov (best-play)
- */
 (function ($) {
     $.fn.TODO = function (options) {
         var defaults = {

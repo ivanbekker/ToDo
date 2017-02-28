@@ -1,14 +1,11 @@
 # Simple TODO Lists
-This is simple todo web app that allow you manage todo lists.
+Это простой TODO, которые позволяет вам управлять списком дел.
 
-The application is written in PHP, JavaScript and uses Ajax requests to make a UI more friendly and responsive.
-For frontend it uses:
+Приложение написано в PHP, JavaScript и использует Ajax.
+Для веб-интерфейсе он использует:
 - Bootstrap
-- Font Awesome
 - Jquery
 - Jquery UI
-And PHP at server side.
+И PHP на стороне сервера.
 
-You can see [live demo here](http://hnet.xyz/).
-
-To setup the app clone the git repo into your server and run install.php
+Чтобы установить приложение необходимо склонировать Git репозиторий на свой сервер и запустить install.php
