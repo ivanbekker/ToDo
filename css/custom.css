@@ -1,0 +1,215 @@
+/* BODY */
+body {
+    background: url("../images/background.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+/* END BODY */
+
+/* GROWl BOX*/
+div.growlUI.success {
+    background: url(../images/success.png) no-repeat 10px 5px;
+}
+div.growlUI.error {
+    background: url(../images/error.png) no-repeat 10px 5px;
+}
+div.growlUI .title {
+    color: white;
+    padding: 5px 5px 0 75px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+div.growlUI .body {
+    color: white;
+    padding: 0 5px 5px 75px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Custom page header */
+.header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+}
+
+.header h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+}
+
+.no-left-padding {
+    padding-left: 0;
+}
+
+#error-box {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    text-align: center;
+    z-index: 9999;
+}
+/* END custom page header */
+
+/* Customize container and container body */
+.container {
+    max-width: 730px;
+    min-width: 730px;
+}
+
+.container .panel {
+    border-radius: 0 0 15px 15px;
+    border-color: #b5b3ab;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.22);
+    margin-bottom: 35px;
+}
+
+.container .panel .panel-heading {
+    border-radius: 0;
+}
+
+.container .header-height {
+    padding: 14px 15px;
+}
+
+/* fix hover border-radius */
+.table-hover>tbody>tr:hover {
+    background-color: #fcfed5;
+}
+.table-hover>tbody>tr:hover:last-child td:first-child {
+    background-color: #fcfed5;
+    -moz-border-radius: 0 0 0 15px;
+    -webkit-border-radius: 0 0 0 15px;
+    -khtml-border-radius: 0 0 0 15px;
+    border-radius: 0 0 0 15px;
+}
+.table-hover>tbody>tr:hover:last-child td:last-child {
+    background-color: #fcfed5;
+    -moz-border-radius: 0 0 15px 0;
+    -webkit-border-radius: 0 0 15px 0;
+    -khtml-border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px 0;
+}
+/* end */
+
+.opacity {
+    opacity: 0.5;
+}
+
+.row .edit_project, .row .delete_project,
+.controls .arrows-task, .controls .edit_task, .controls .delete_task {
+    display: none;
+}
+
+.panel-heading:hover .row .edit_project, .panel-heading:hover .row .delete_project,
+.custom-bordered-table tr:hover .controls .arrows-task,
+.custom-bordered-table tr:hover .controls .edit_task,
+.custom-bordered-table tr:hover .controls .delete_task {
+    display: inline-block;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.style-cursor {
+    cursor: pointer;
+}
+
+.separator {
+    margin: 0 6px 0 3px;
+}
+
+.add_project {
+    padding: 10px;
+    background-image: -webkit-linear-gradient(top, #dfdfdf 0, #cecece 100%);
+    background-image: -o-linear-gradient(top, #dfdfdf 0, #cecece 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#cecece));
+    background-image: linear-gradient(to bottom, #dfdfdf 0, #cecece 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#cecece', GradientType=0);
+    background-repeat: repeat-x;
+}
+
+#add_project_btn {
+    margin-top: 14px;
+}
+
+.input-group-addon.plus {
+    padding: 3px 15px 3px 8px;
+    color: green;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.input-group .fa-plus {
+    font-size: 25px;
+    padding-top: 1px;
+}
+
+.custom-bordered-table {
+    width: 100%;
+    max-width: 100%;
+    color: #999999;
+}
+
+.custom-bordered-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-bordered-table tr:last-child {
+    border-bottom: none;
+}
+
+.custom-bordered-table td {
+    padding: 10px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+
+.task-status {
+    width: 56px;
+    text-align: center;
+    border-right: 4px double #efdadf;
+}
+
+.task-description {
+    width: 545px;
+}
+
+.controls {
+    width: 95px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+.edit_controls {
+    display: none;
+    height: 34px;
+    padding-top: 7px;
+}
+/* END customize container and container body */
+
+/* Custom footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+}
+
+.copyright {
+    color: #ffffff;
+}
+/* END custom footer */
