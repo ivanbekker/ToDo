@@ -41,9 +41,9 @@ var_dump([
     dbname => $dbname,
 ])
 
-$mysqli = new mysqli($server, $username, $password, $dbname);
+$mysqli = new mysql_connect($server, $username, $password);
 
-if ($mysqli->connect_errno) {
+if ($mysqli) {
     msgbox("Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
 }
 
