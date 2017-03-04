@@ -14,7 +14,7 @@ echo '<!DOCTYPE html>
     <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="js/jquery-todo.js"></script>
+    <script type="text/javascript" src="js/jquery-todo-list.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
