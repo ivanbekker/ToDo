@@ -34,6 +34,13 @@ $username = $url["user"];
 $password = $url["pass"];
 $dbname = substr($url["path"],1);
 
+var_dump([
+    server -> $server,
+    username -> $username,
+    password -> $password,
+    dbname -> $dbname,
+])
+
 $mysqli = new mysqli($server, $username, $password, $dbname);
 
 if ($mysqli->connect_errno) {
