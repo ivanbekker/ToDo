@@ -35,10 +35,10 @@ $password = $url["pass"];
 $dbname = substr($url["path"],1);
 
 var_dump([
-    server -> $server,
-    username -> $username,
-    password -> $password,
-    dbname -> $dbname,
+    server => $server,
+    username => $username,
+    password => $password,
+    dbname => $dbname,
 ])
 
 $mysqli = new mysqli($server, $username, $password, $dbname);
