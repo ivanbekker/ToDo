@@ -48,7 +48,8 @@ foreach ($tableSchema as $table) {
 }
 
 @unlink('install.php');
-header("Location: index.php");
+// header("Location: index.php");
+echo "DB:".$dbname.". success!!!"
 die();
 
 

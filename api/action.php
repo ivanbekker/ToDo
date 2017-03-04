@@ -23,12 +23,13 @@ class Project
         $server = $url["host"];
         $username = $url["user"];
         $password = $url["pass"];
+        $dbname = substr($url["path"],1);
 
         $this->_config = [
             'host' => $url["host"],
             'username' => $url["user"],           // Database username
             'password' => $url["pass"],           // Database password
-            'dbname' => substr($url["path"],1),      // Database name
+            'dbname' => $dbname,      // Database name
         ];
 
         if ($this->_config) {
