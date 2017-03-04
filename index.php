@@ -1,7 +1,6 @@
 
 <?php
-if (file_exists('config.php')) {
-    echo '<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -49,8 +48,3 @@ if (file_exists('config.php')) {
 
 </body>
 </html>';
-
-} else {
-    header("Location: install.php");
-    die();
-}

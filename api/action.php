@@ -18,7 +18,19 @@ class Project
     public function __construct()
     {
         /** Loading config, connect to database */
-        $this->_config = include "../config.php";
+
+        $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+
+        $this->_config = [
+            'host' => $url["host"],
+            'username' => $url["user"],           // Database username
+            'password' => $url["pass"],           // Database password
+            'dbname' => 'todo',        // Database name
+        ];
+
         if ($this->_config) {
             $this->_mysqli = new mysqli($this->_config['host'], $this->_config['username'], $this->_config['password'], $this->_config['dbname']);
             $this->command();
