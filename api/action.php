@@ -5,7 +5,6 @@
 
 /** setting header and encoding */
 header('Content-Type: application/json');
-mb_internal_encoding('utf8');
 
 /**
  * Class Project for projects managing
