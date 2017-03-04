@@ -32,8 +32,9 @@ $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
+$dbname = substr($url["path"],1);
 
-$mysqli = new mysqli_connect($server, $username, $password);
+$mysqli = new mysqli($server, $username, $password, $dbname);
 
 if ($mysqli->connect_errno) {
     msgbox("Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
