@@ -39,11 +39,11 @@ var_dump([
     username => $username,
     password => $password,
     dbname => $dbname,
-])
+]);
 
-$mysqli = new mysql_connect($server, $username, $password);
+$mysqli = new mysqli($server, $username, $password, $dbname);
 
-if ($mysqli) {
+if ($mysqli->connect_errno) {
     msgbox("Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
 }
 
