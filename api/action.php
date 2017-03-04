@@ -31,7 +31,7 @@ class Project
         ];
 
         if ($this->_config) {
-            $this->_mysqli = new mysqli($this->_config['host'], $this->_config['username'], $this->_config['password']);
+            $this->_mysqli = new mysqli_connect($this->_config['host'], $this->_config['username'], $this->_config['password']);
             $this->command();
         } else {
             echo json_encode(['error' => 'Config not found']);

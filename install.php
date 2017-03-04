@@ -33,7 +33,7 @@ $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 
-$mysqli = new mysqli($server, $username, $password);
+$mysqli = new mysqli_connect($server, $username, $password);
 
 if ($mysqli->connect_errno) {
     msgbox("Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
